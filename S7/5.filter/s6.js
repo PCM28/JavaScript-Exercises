@@ -1,0 +1,10 @@
+const streamers = [{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'}, 
+                {name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'}, 
+                {name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'}, 
+                {name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}];
+ const newStreamers = streamers.filter(function (streamer) {
+    if(streamer.age>35) streamer.gameMorePlayed = streamer.gameMorePlayed.toUpperCase();
+    if(streamer.gameMorePlayed.includes("Legends") || streamer.gameMorePlayed.includes("Legends".toUpperCase())) return streamer;//or streamer.gameMorePlayed.includes("EGENDS");
+ });
+ console.log(newStreamers);
+ //toUpperCase() -> convertir en mayúsculas un string y toLowerCase() en miníscula un string

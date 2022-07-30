@@ -1,0 +1,1 @@
+console.log(document.querySelector(".showme"));//siempre es document.querySelector
